@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<layers>
+    <layer name="wcc.caching"
+        interface="wcc.caching.interfaces.IProductSpecific" />
+</layers>
