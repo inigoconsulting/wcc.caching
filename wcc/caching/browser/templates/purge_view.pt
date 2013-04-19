@@ -6,7 +6,9 @@
 <head>
 </head>
 <body>
-    <div metal:fill-slot="content">
+    <div metal:fill-slot="content-title"></div>
+    <div metal:fill-slot="content-description"></div>
+    <div metal:fill-slot="content-core">
         <form method="POST">
             <div>
                 Click the button below to purge this content from the cache proxies
