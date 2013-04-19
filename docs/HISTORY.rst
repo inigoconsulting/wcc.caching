@@ -4,7 +4,7 @@ Changelog
 1.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Use synchronous purging for @@cachepurge [izhar]
 
 
 1.0 (2013-04-18)
