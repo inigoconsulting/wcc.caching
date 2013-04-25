@@ -24,7 +24,18 @@
     <subscriber 
         for="Products.ATContentTypes.interfaces.news.IATNewsItem
             zope.lifecycleevent.IObjectModifiedEvent"
-        handler=".subscribers.purge_homepage"/>
+            handler=".subscribers.purge_homepage"/>
+
+    <subscriber 
+        for="Products.ATContentTypes.interfaces.event.IATEvent
+        Products.CMFCore.interfaces.IActionSucceededEvent"
+            handler=".subscribers.purge_homepage"/>
+
+    <subscriber 
+        for="Products.ATContentTypes.interfaces.news.IATNewsItem
+        Products.CMFCore.interfaces.IActionSucceededEvent"
+            handler=".subscribers.purge_homepage"/>
+
 
 
     <!-- -*- extra stuff goes here -*- -->
