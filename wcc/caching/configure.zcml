@@ -7,11 +7,20 @@
     xmlns:grok="http://namespaces.zope.org/grok"
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:cache="http://namespaces.zope.org/cache"
     i18n_domain="wcc.caching">
 
     <includeDependencies package="." />
     <grok:grok package="." />
     <i18n:registerTranslations directory="locales" />
+
+    <include package="z3c.caching" file="meta.zcml"/>
+
+    <cache:rulesetType
+      name="wcc.noCache"
+      title="No Caching"
+      description="Objects/Views which are not to going to be cached"
+      />
 
     <include package=".behavior"/>
     <include package=".portlet"/>
