@@ -45,7 +45,7 @@
         Products.CMFCore.interfaces.IActionSucceededEvent"
             handler=".subscribers.purge_homepage"/>
 
-
+    <interface interface=".interfaces.IPurgeNightly"/>
 
     <!-- -*- extra stuff goes here -*- -->
 
