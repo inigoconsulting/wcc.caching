@@ -10,7 +10,7 @@ grok.templatedir('templates')
 
 class PurgeView(grok.View):
     grok.name('cachepurge')
-    grok.require('cmf.ManagePortal')
+    grok.require('cmf.ModifyPortalContent')
     grok.template('purge_view')
     grok.context(IContentish)
     grok.layer(IProductSpecific)
